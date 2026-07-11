@@ -5,100 +5,317 @@
 *,
 *::before,
 *::after {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
 
-/* Evita espaços indesejados e impede que ultrapassem o contêiner. */
-img, picture, videos, canvas, svg {
+
+img,
+picture,
+video,
+canvas,
+svg {
+
     display: block;
+
     max-width: 100%;
+
 }
 
-/* inherit é uma palavra-chave do CSS que faz uma propriedade assumir o mesmo valor do elemento pai.*/
-input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
+
     font: inherit;
+
 }
 
-/* None Remove o sublinhado dos links */
+
 a {
+
     text-decoration: none;
+
     color: inherit;
+
 }
 
-/* Remove os marcadores ou a numeração das listas */
-ul, ol {
+
+ul,
+ol {
+
     list-style: none;
+
 }
 
-/* =========================
-   FINAL DORESET
-========================= */
 
 
 /* =========================
-   VARIÁVEIS GLOBAIS (:root)
-   Valores reutilizáveis do projeto
+   VARIÁVEIS GLOBAIS
 ========================= */
+
 :root {
-    --primary-color: #328900;
-    --secondary-color: #5f3bc3;
-    --font-family: 'Arial', sans-serif;
+
+    --primary-color: #250089;
+
+    --secondary-color: #db6bdb;
+
+    --font-family: Arial, sans-serif;
+
     --font-size: 16px;
+
     --line-height: 1.5;
-    --largura-maxima: 1200px;}
+
+    --largura-maxima: 1200px;
+
+}
 
 
 
 /* =========================
    BODY
-   Base do site
 ========================= */
 
 body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    line-height: var(--line-height);
+
     min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background-color: var(--primary-color);
+
+    color: var(--secondary-color);
+
+    font-family: var(--font-family);
+
+    font-size: var(--font-size);
+
+    line-height: var(--line-height);
+
 }
+
 
 
 /* =========================
    WRAPPER
-   Envolve todo o site
+   ORGANIZA HEADER MAIN FOOTER
 ========================= */
 
 .wrapper {
+
     width: 100%;
-    max-width: var(--largura-maxima);
-    margin: 0 auto;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
 }
+
 
 
 /* =========================
-   CONTAINER / LIMITE
-   Controla largura do conteúdo
+   CONTAINER PRINCIPAL
+   PAI DO LOGO E MENU
 ========================= */
 
 .limiting-container {
+
     width: 100%;
+
     max-width: var(--largura-maxima);
+
     margin: 0 auto;
+
     padding: 0 20px;
+
+
+    display: flex;
+
     flex-direction: row;
 
+    justify-content: space-between;
+
+    align-items: center;
+
 }
+
 
 
 /* =========================
    HEADER
 ========================= */
 
-.header {
+header {
+
     width: 100%;
-    min-height: 60px;
+
+    min-height: 80px;
+
     background-color: var(--secondary-color);
+
+}
+
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+
+.logo img {
+
+    width: 80px;
+
+    border-radius: 50%;
+
+    margin: 10px;
+
+}
+
+
+
+.logo span {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu ul {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 20px;
+
+}
+
+
+
+.menu a {
+
+    color: rgb(230, 223, 228);
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================
+   MAIN
+   OCUPA ESPAÇO VAZIO
+========================= */
+
+main {
+
+    width: 100%;
+
+    flex: 1;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+.principal {
+
+    width: 100%;
+
+    max-width: var(--largura-maxima);
+
+    margin: 0 auto;
+
+    background-color: var(--primary-color);
+
+    padding: 20px;
+
+}
+
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    width: 300px;
+
+    background-color: var(--secondary-color);
+
+    color: var(--primary-color);
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.text {
+
+    margin-bottom: 10px;
+
+    line-height: 1.3;
+
+    text-align: justify;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  width:100%;
+
+    padding:20px;
+
+    background-color:#ce1e84;
+
+    color:white;
+
+    text-align:center;
+
 }
