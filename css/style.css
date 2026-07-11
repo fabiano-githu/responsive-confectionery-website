@@ -319,3 +319,189 @@ footer {
     text-align:center;
 
 }
+
+
+/* =================================
+   RESPONSIVIDADE
+   TELAS MÉDIAS
+   Tablets
+================================= */
+
+@media (max-width: 992px) {
+
+
+    .limiting-container {
+
+        padding: 0 15px;
+
+    }
+
+
+    .logo span {
+
+        font-size:20px;
+
+    }
+
+
+    .menu ul {
+
+        gap:15px;
+
+    }
+
+
+    .main .limiting-container {
+
+        flex-direction:column;
+
+    }
+
+
+    .principal {
+
+        width:100%;
+
+    }
+
+
+    .sidebar {
+
+        width:100%;
+
+    }
+
+
+}
+
+
+
+/* =================================
+   TELAS PEQUENAS
+   Celulares
+================================= */
+
+@media (max-width: 576px) {
+
+
+    header .limiting-container {
+
+
+        flex-direction:column;
+
+
+        gap:20px;
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .logo {
+
+
+        flex-direction:column;
+
+
+        text-align:center;
+
+
+    }
+
+
+
+    .logo img {
+
+
+        width:70px;
+
+
+    }
+
+
+
+    .menu ul {
+
+
+        flex-direction:column;
+
+
+        align-items:center;
+
+
+        gap:10px;
+
+
+    }
+
+
+
+    .main {
+
+
+        padding:10px;
+
+
+    }
+
+
+
+    .principal {
+
+
+        padding:15px;
+
+
+    }
+
+
+
+    h1 {
+
+
+        font-size:24px;
+
+
+    }
+
+
+
+    .text {
+
+
+        font-size:14px;
+
+
+        line-height:1.6;
+
+
+        text-align:justify;
+
+
+    }
+
+
+
+    .sidebar {
+
+
+        width:100%;
+
+
+    }
+
+
+
+    footer {
+
+
+        font-size:14px;
+
+
+    }
+
+
+}
