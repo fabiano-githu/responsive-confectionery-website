@@ -48,11 +48,10 @@ table { border-collapse: collapse; width: 100%; }
 :root {
   --color-primary: #1a73e8;
   --color-secondary: #6c757d;
-  --color-bg: #f8b195;
+  --color-bg: #cf78b5;
   --color-bg-alt: #f5f5f5;
-  --color-bg-header: #f67280;
-  --color-bg-footer: #f67280;
-  --color-footer-bg: #9c2531;
+  --color-bg-header:rgb(236, 12, 180);
+  --color-bg-footer:rgb(236, 12, 180);
   --color-text: #1a1a1a;
   --color-text-muted: #666666;
   --color-border: #e0e0e0;
@@ -104,7 +103,6 @@ table { border-collapse: collapse; width: 100%; }
    ========================================= */
 header {
   width: 100%;
-  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   background: var(--color-bg-header);
@@ -127,7 +125,7 @@ header .container {
 }
 
 .logo img {
-  margin-top: 180px;
+  margin-top: 330px;
   height: 300px;
   width: auto;
 }
@@ -185,6 +183,11 @@ main .container {
 
 main section { flex: 2; min-width: 0; }
 main aside { flex: 1; min-width: 0; }
+
+
+#inicio{
+  margin-top: 250px;
+}
 
 /* =========================================
    FOOTER
